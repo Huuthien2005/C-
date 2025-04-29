@@ -34,7 +34,6 @@ namespace BT_chuong4._3
                     FrmMain f = new FrmMain(txtUser.Text);
                     this.Hide();
                     f.Update();
-                    f.Dispose(); 
                 }
                 else
                 {
