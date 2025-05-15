@@ -47,11 +47,11 @@ namespace Bt_chuong4._1._2
             }
             if (e.KeyCode == Keys.Left && paddle.Left > 0)
             {
-                paddle.Left -= 20;
+                paddle.Left -=5;
             }
-            else if (e.KeyCode == Keys.Right && paddle.Right < this.ClientSize.Width)
+            if (e.KeyCode == Keys.Right && paddle.Right < this.ClientSize.Width)
             {
-                paddle.Left += 20;
+                paddle.Left += 5;
             }
         }
 
@@ -69,6 +69,11 @@ namespace Bt_chuong4._1._2
             {
                 return;
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            paddle.Location=new Point (this.ClientSize.Width/2,this.ClientSize.Height - paddle.Height - 10);    
         }
     }
 }

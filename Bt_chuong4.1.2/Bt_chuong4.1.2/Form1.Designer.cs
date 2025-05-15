@@ -75,6 +75,8 @@
             Controls.Add(picBall);
             Name = "Form1";
             Text = "Form1";
+            WindowState = FormWindowState.Maximized;
+            Load += Form1_Load;
             KeyDown += Form1_KeyDown;
             ((System.ComponentModel.ISupportInitialize)picBall).EndInit();
             ResumeLayout(false);
